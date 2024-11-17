@@ -105,7 +105,9 @@ def send_data(device):
 
 # Server communication
 def main():
-    devices={111111111111111,222222222222222,333333333333333}
+    number_of_devices=30
+    devices={i for i in range(10**14,10**14+number_of_devices)}
+    print(devices)
     active_devices=set()
     device_Thread=dict()
     while True:
